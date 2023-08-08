@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Hayleys Blog V1.0</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="https://codepen.io/Buddy-buie/pen/ExdqBqZ" style="margin-left: 10px;">STARS-BLOG</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="filterPosts('about')">About</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Categories
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#" onclick="filterPosts('all')">All</a>
+            <a class="dropdown-item" href="#" onclick="filterPosts('fnaf')">FNAF</a>
+            <a class="dropdown-item" href="#" onclick="filterPosts('dragons')">Dragon</a>
+
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container welcome-section">
+    <h2 class="text-center">Welcome To My</h2>
+    <img src="https://i.gifer.com/PcWZ.gif" alt="funny GIF" width="100%">
+
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="blog-post fnaf">
+          <h2>Moons Singing</h2>
+          <img src="https://assets.codepen.io/7450755/IMG_0745.jpg" alt="Blog Post Image" class="img-fluid">
+          <p>Published on June 3rd</p>
+          <div class="post-content">
+            <p class="intro">You compliment Moons singing and he gets flustered about it...</p>
+            <p class="full">You were sitting at the security desk in the daycare, it was nap time so you let handle the kids
+              since you couldn't see too well because of how dark it was. You were scrolling through social media when you heard
+              singing coming from the general direction of the nap time corner. The singing sounded very pretty and soothing, and
+              it sounded like some kind of lullaby. After a few minutes, Moon walked over, "Was that you singing?" you asked,
+              already knowing the answer. He froze, red eyes widening as he blushed, "I-I-um-N-No" He stuttered. "Who else would
+              it be? There's no way one of the kids could sing that good! Your singing sounds amazing!" you whisper-yelled, he
+              pulled his hat down, covering part of his blushing face "T-thank you, Starlight"</p>
+          </div>
+          <a href="#" class="btn btn-dark read-more">Read More</a>
+        </div>
+
+        <div class="blog-post dragons">
+          <img src="https://images.unsplash.com/photo-1548412576-d92cb3275e23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1174&q=80" alt="Blog Post Image" class="img-fluid">
+          <h2>Blog Post Title 2</h2>
+          <p>Published on June 2, 2023 by Jane Smith</p>
+          <div class="post-content">
+            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="full">You were sitting at the security desk in the daycare, it was nap time so you let handle the kids
+              since you couldn't see too well because of how dark it was. You were scrolling through social media when you heard
+              singing coming from the general direction of the nap time corner. The singing sounded very pretty and soothing, and
+              it sounded like some kind of lullaby. After a few minutes, Moon walked over, "Was that you singing?" you asked,
+              already knowing the answer. He froze, red eyes widening as he blushed, "I-I-um-N-No" He stuttered. "Who else would
+              it be? There's no way one of the kids could sing that good! Your singing sounds amazing!" you whisper-yelled, he
+              pulled his hat down, covering part of his blushing face "T-thank you, Starlight"</p>
+          </div>
+          <a href="#" class="btn btn-dark read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="blog-post about" style="display: none;">
+    <h2>About Me</h2>
+    <img src="https://images.unsplash.com/photo-1573497019236-17f8177b81e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmVzc2lvbmFsJTIwd29tYW58ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt="About Me Image">
+    <div class="post-content">
+      <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p class="full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel lectus et ligula tristique feugiat.
+        Fusce in nisi lectus. In ac suscipit ipsum. Sed in feugiat magna, eget aliquet tortor. Mauris feugiat velit non
+        orci gravida, eu rutrum neque suscipit. Proin mattis velit vitae tincidunt facilisis. Nam auctor tristique lacus, eu
+        congue metus mattis id. Phasellus id mauris et orci congue tempor. Morbi vel elit ac felis consequat tristique.
+        Phasellus ac ex sapien. Etiam condimentum mauris in libero accumsan, nec eleifend turpis pulvinar.</p>
+    </div>
+  </div>
+
+  <footer class="footer bg-dark text-light text-center">
+    <div class="container">
+      <p>&copy; 2023 My Blog. All rights reserved.</p>
+      <div class="social-buttons">
+        <a href="https://www.instagram.com" class="btn btn-outline-light btn-lg"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="https://www.facebook.com" class="btn btn-outline-light btn-lg"><i class="fab fa-facebook"></i>facebook</a>
+        <a href="https://www.linkedin.com" class="btn btn-outline-light btn-lg"><i class="fab fa-linkedin"></i>linkedin</a>
+        <a href="https://www.yourwebsite.com" class="btn btn-outline-light btn-lg">Website</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

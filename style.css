@@ -1,0 +1,52 @@
+h2,
+p {
+  text-align: center;
+}
+
+.profile-pic {
+  width: 50%;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 600px;
+  padding-bottom: 50px;
+}
+
+.btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-post {
+  padding: 20px 10px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.footer {
+  margin-top: 50px;
+}
+
+.post-content .full {
+  display: none;
+}
+
+.post-content.expanded .full {
+  display: block;
+  text-align: center;
+}
